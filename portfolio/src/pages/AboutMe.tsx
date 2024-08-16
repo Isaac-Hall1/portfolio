@@ -1,6 +1,22 @@
+import { useScramble } from "use-scramble";
 const AboutMe = () => {
+  const {ref} = useScramble({
+    text: `Currently, I am a Junior at the University of Utah studying Computer Science. My main passions are web development and software development.
+    I've worked on a few projects (found below) that show off these passions. As well as this, outside of programming, I love to climb, play poker
+    with friends, and work on personal projects.`,
+    range: [65,125],
+    speed: 1,
+    tick: 1,
+    step: 5,
+    scramble: 75,
+    seed: 2,
+    chance: 1,
+    overdrive: false,
+    overflow: true,
+  })
+  
   return (
-    <div className="min-h-screen font-mono">
+    <div className="min-h-screen font-mono flex flex-col justify-center pb-64 cursor-default">
       <div className="font-bold text-white text-4xl md:text-6xl pt-4 pb-8">
         Hello I'm Isaac Hall
       </div>
@@ -19,7 +35,11 @@ const AboutMe = () => {
                 <li> HTML/CSS</li>
                 <li aria-hidden="true">Typescript</li>
             </ul>
-        </span></div>
+          </span>
+        </div>
+        <div className="py-8 text-gray-500">
+          <span ref={ref}/>
+        </div>
     </div>
   )
 }

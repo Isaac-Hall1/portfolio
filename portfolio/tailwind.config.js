@@ -7,8 +7,17 @@ export default {
       extend: {
         animation: {
           'text-slide': 'text-slide 25s cubic-bezier(0.83, 0, 0.17, 1) infinite',
+          'fadeIn': 'fadeIn 2s ease-in forwards',
         },
         keyframes : {
+            'fadeIn': {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            "borderSlide": {
+              '0%, 100%': { borderWidth: '.5px', borderColor: 'transparent' },
+              '50%': { borderWidth: '2px', borderColor: 'rgba(255, 255, 255, 0.7)' },
+            },
             'text-slide': {
               '0%, 8%': {
                   transform: 'translateY(0%)',
@@ -40,7 +49,7 @@ export default {
               '91%, 100%': {
                   transform: 'translateY(-90%)',
               },
-          },                    
+          },                  
         },
         fontFamily: {
           poppins: ['Poppins', 'sans-serif'],
