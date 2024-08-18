@@ -1,9 +1,9 @@
 import { useScramble } from "use-scramble";
 const AboutMe = () => {
   const {ref} = useScramble({
-    text: `Currently, I am a Junior at the University of Utah studying Computer Science. My main passions are web development and software development.
-    I've worked on a few projects (found below) that show off these passions. As well as this, outside of programming, I love to climb, play poker
-    with friends, and work on personal projects.`,
+    text: `I’m currently a Junior at the University of Utah, majoring in Computer Science. My passions lie in web and software development, 
+    and I've worked on several projects (shown below) that highlight these interests. Outside of programming, I enjoy climbing, spending time 
+    with friends, and working on personal projects that fuel my creativity.`,
     range: [65,125],
     speed: 1,
     tick: 1,
