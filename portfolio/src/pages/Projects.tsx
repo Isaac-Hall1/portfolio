@@ -1,5 +1,8 @@
 import FadeInSection from "../components/FadeIn"
 import Project from "../components/Project"
+import blogsite from '../assets/blogsite.png'
+import twitter from '../assets/twitter.png'
+
 const Projects = () => {
   return (
     <div className="min-h-screen flex flex-col cursor-default font-mono pt-20">
@@ -14,15 +17,17 @@ const Projects = () => {
             blog posts, and comment on specific blog posts. From this project I learned how to create a REST API, how to authenticate
             users using JWT, and creating an interactive yet simple front-end with tailwind."/>
           </div>
-          <div className="">
-
+          <div className="md:basis-1/2 flex justify-center items-center">
+            <img src={blogsite} alt="clarksonimage" className="rounded-lg size-48 md:size-fit"></img>
           </div>
         </div>
       </FadeInSection>
       <FadeInSection>
         <div className="flex flex-col md:flex-row mx-auto align-middle pt-28">
-          <div className="md:basis-1/2">
-
+          <div className="md:basis-1/2 flex justify-center items-center">
+            <iframe width="80%" height='80%' className="rounded-xl"
+              src="https://www.youtube.com/embed/ZHUQc9RAz2E">
+            </iframe>
           </div>
           <div className="md:basis-1/2">
             <Project  link='https://github.com/Isaac-Hall1/BlackjackGame' Title="Blackjack App" Content="In this class project, my team of six and I developed an interactive Blackjack app using C++ and Qt,
@@ -41,15 +46,17 @@ const Projects = () => {
              Through this project, I gained valuable experience in collaborative development,learning the importance of compromise and when
              to step up and take on additional responsibilities to ensure the success of the team."/>
           </div>
-          <div className="md:basis-1/2">
-
+          <div className="md:basis-1/2 flex justify-center items-center">
+            <iframe width="80%" height='80%' className="rounded-xl"
+              src="https://www.youtube.com/embed/6__YZDYZKEs">
+            </iframe>
           </div>
         </div>
       </FadeInSection>
       <FadeInSection>
         <div className="flex flex-col md:flex-row mx-auto align-middle pt-28 pb-36">
-          <div className="md:basis-1/2">
-
+          <div className="md:basis-1/2 flex justify-center items-center p-10">
+            <img src={twitter} alt="clarksonimage" className="rounded-lg size-48 md:size-fit"></img>
           </div>
           <div className="md:basis-1/2">
             <Project  link='https://github.com/Isaac-Hall1/TwitterBot' Title="Twitter Bot" Content="For this project I created a Twitter bot that scraped Twitch.tv using selenium for 24 hours every

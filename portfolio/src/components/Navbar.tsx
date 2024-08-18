@@ -2,6 +2,9 @@ const Navbar = () => {
   const scrollToSection = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth'});
   }
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:imhall2344@gmail.com';
+  };
   return (
     <nav className="sticky top-0 w-full block z-10 pt-4 pb-4 border-b-[.5px] border-white bg-black">
       <div style={{position: 'relative'}} className="flex flex-row max-w-screen-lg mx-auto justify-center font-bold cursor-default">
@@ -16,7 +19,7 @@ const Navbar = () => {
             <p className="hover:cursor-pointer hover:text-blue-500" onClick={() => scrollToSection('ProjectsSection')}>Projects</p>
           </div>
           <div className="pr-2 pl-2">
-            <p className="hover:cursor-pointer hover:text-blue-500" onClick={() => scrollToSection('ContactSection')}>Contact</p>
+            <button className="hover:cursor-pointer hover:text-blue-500" onClick={() => handleEmailClick()}>Contact</button>
           </div>
         </div>
       </div>
