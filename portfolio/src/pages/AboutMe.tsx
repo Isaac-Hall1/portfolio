@@ -22,7 +22,7 @@ const AboutMe = () => {
         Hello I'm Isaac Hall
       </div>
       <div className="font-bold text-xl md:text-2xl [text-wrap:balance] bg-clip-text text-white">
-        I've developed in 
+        I've developed with 
           <span className="text-blue-500 inline-flex flex-col h-[calc(theme(fontSize.xl)*theme(lineHeight.tight))] md:h-[calc(theme(fontSize.2xl)*theme(lineHeight.tight))] overflow-hidden">
             <ul className=" animate-text-slide block text-left leading-tight [&_li]:block ml-3">
                 <li> Typescript</li>
