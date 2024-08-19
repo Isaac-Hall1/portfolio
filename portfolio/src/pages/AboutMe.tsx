@@ -1,7 +1,3 @@
-import github from '../assets/github.png'
-import link from '../assets/link.png'
-import paper from '../assets/paper.png'
-import isaac_hall_resume from '../assets/isaac_hall_resume.pdf'
 
 import { useScramble } from "use-scramble";
 const AboutMe = () => {
