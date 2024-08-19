@@ -24,7 +24,7 @@ const Projects = () => {
       </FadeInSection>
       <FadeInSection>
         <div className="flex flex-col md:flex-row mx-auto align-middle pt-28">
-          <div className="md:basis-1/2 flex justify-center items-center">
+          <div className="md:basis-1/2 flex justify-start items-center">
             <iframe width="80%" height='80%' className="rounded-xl"
               src="https://www.youtube.com/embed/ZHUQc9RAz2E">
             </iframe>
@@ -55,7 +55,7 @@ const Projects = () => {
       </FadeInSection>
       <FadeInSection>
         <div className="flex flex-col md:flex-row mx-auto align-middle pt-28 pb-36">
-          <div className="md:basis-1/2 flex justify-center items-center p-10">
+          <div className="md:basis-1/2 flex justify-center items-center py-10 pr-10">
             <img src={twitter} alt="clarksonimage" className="rounded-lg size-48 md:size-fit"></img>
           </div>
           <div className="md:basis-1/2">
