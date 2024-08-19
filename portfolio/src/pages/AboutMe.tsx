@@ -1,3 +1,8 @@
+import github from '../assets/github.png'
+import link from '../assets/link.png'
+import paper from '../assets/paper.png'
+import isaac_hall_resume from '../assets/isaac_hall_resume.pdf'
+
 import { useScramble } from "use-scramble";
 const AboutMe = () => {
   const {ref} = useScramble({
@@ -37,7 +42,7 @@ const AboutMe = () => {
             </ul>
           </span>
         </div>
-        <div className="py-8 text-gray-500">
+        <div className="pt-8 pb-4 text-gray-400">
           <span ref={ref}/>
         </div>
     </div>

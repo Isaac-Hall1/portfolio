@@ -1,6 +1,7 @@
 import AboutMe from './pages/AboutMe'
 import Projects from './pages/Projects'
 import Experience from './pages/Experience'
+import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
           </div>
           <div id='ProjectsSection' className=''>
             <Projects/>
+          </div>
+          <div id='ContactSection' className='scroll-mt-20'>
+            <Contact/>
           </div>
         </main>
       </div>
