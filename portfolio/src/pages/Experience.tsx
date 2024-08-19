@@ -17,7 +17,7 @@ const Experience = () => {
               also personally set up an Azure server to host the Django backend."/>
           </div>
           <div className="md:basis-1/2 justify-center px-20 py-10 align-middle mx-auto">
-            <img src={clarksonlogo} alt="clarksonimage" className="rounded-lg size-48 md:size-fit"></img>
+            <img src={clarksonlogo} alt="clarksonimage" className="rounded-lg size-fill object-contain"></img>
           </div>
         </div>
       </FadeInSection>

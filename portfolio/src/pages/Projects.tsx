@@ -18,7 +18,7 @@ const Projects = () => {
             users using JWT, and creating an interactive yet simple front-end with tailwind."/>
           </div>
           <div className="md:basis-1/2 flex justify-center items-center">
-            <img src={blogsite} alt="clarksonimage" className="rounded-lg size-48 md:size-fit"></img>
+            <img src={blogsite} alt="clarksonimage" className="rounded-lg size-fill object-contain"></img>
           </div>
         </div>
       </FadeInSection>
@@ -56,7 +56,7 @@ const Projects = () => {
       <FadeInSection>
         <div className="flex flex-col md:flex-row mx-auto align-middle pt-28 pb-36">
           <div className="md:basis-1/2 flex justify-center items-center py-10 pr-10">
-            <img src={twitter} alt="clarksonimage" className="rounded-lg size-48 md:size-fit"></img>
+            <img src={twitter} alt="clarksonimage" className="rounded-lg size-48 md:size-full object-contain"></img>
           </div>
           <div className="md:basis-1/2">
             <Project  link='https://github.com/Isaac-Hall1/TwitterBot' Title="Twitter Bot" Content="For this project I created a Twitter bot that scraped Twitch.tv using selenium for 24 hours every
